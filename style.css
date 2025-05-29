@@ -42,8 +42,12 @@ p{
     font-size: 23px;
     max-width: 650px;
 }
+.parent-container {
+    display: flex;
+    justify-content: center;
+    }
 
-.Logo_jpg {
+.Logo__JPG {
     display: block;
     width: 100%;
     max-width: 350px;
