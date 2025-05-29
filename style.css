@@ -81,7 +81,7 @@ p{
     border: 3px solid #919191;
     border-radius: 12px;
     padding: 10px;
-    max-width: 350px;
+    max-width: 1000px;
 }
 
 .settings__Whoosh {
@@ -96,31 +96,30 @@ p{
 .settings__WH h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .tarif__WH__op p,
 .geo__WH__op p,
 .settings__WH__op p {
-    font-size: 19px;
-    max-width: 300px;
-    font-weight: 500;
+    font-size: 20px;
+    max-width: 500px;
+    font-weight: 500px;
 }
 
 .settings__WH__op p {
-    max-width: 650px;
+    max-width:650px;
 }
 
 .logo__WH {
     display: block;
-    width: 100%;
+    width: 200%;
     max-width: 300px;
     height: 470px;
     margin: 40px auto 0;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-top: 8px;
 }
-
 
 /*Urent*/
 

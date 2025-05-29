@@ -146,7 +146,180 @@
     </div>
 
 <!--Таблица-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение сервисов аренды самокатов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            max-width: 1000px;
+            color: #333;
+            padding: 0 15px;
+        }
+     
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 20px 0;
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 600px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #555;
+            color: white;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        /* Фиксированный первый столбец */
+        th:first-child,
+        td:first-child {
+            position: sticky;
+            left: 0;
+            z-index: 10;
+        }
+        /* Чередование цветов ТОЛЬКО для первого столбца */
+        tr td:first-child {
+            background-color: white; /* Белый по умолчанию */
+        }
+        tr:nth-child(even) td:first-child {
+            background-color: #f5f5f5; /* Очень светло-серый */
+        }
+        /* Стандартное чередование для остальных ячеек */
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #e9f7fe;
+        }
+        /* Стиль для заголовка первого столбца */
+        th:first-child {
+            background-color: #555;
+            color: white;
+        }
+        .best {
+            background-color: #d4edda;
+            font-weight: bold;
+        }
+        .rating {
+            color: #e67e22;
+            font-weight: bold;
+        }
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Сравнение сервисов аренды самокатов</h1>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Критерий</th>
+                    <th>Яндекс Go</th>
+                    <th>Urent</th>
+                    <th>Whoosh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Стоимость разблокировки</td>
+                    <td>50 ₽</td>
+                    <td>50 ₽</td>
+                    <td>50 ₽</td>
+                </tr>
+                <tr>
+                    <td>Стоимость минуты</td>
+                    <td>от 7 ₽ до 11 ₽/мин</td>
+                    <td>от 7 ₽ до 11 ₽/мин</td>
+                    <td>от 7 ₽ до 11 ₽/мин</td>
+                </tr>
+                <tr>
+                    <td>Зона покрытия</td>
+                    <td>Широкая (много городов)</td>
+                    <td>Средняя</td>
+                    <td>Ограниченная (в основном Москва)</td>
+                </tr>
+                <tr>
+                    <td>Mos ID</td>
+                    <td>Требуется после 5 поездок</td>
+                    <td>Требуется после 5 поездок</td>
+                    <td>Требуется после 5 поездок</td>
+                </tr>
+                <tr>
+                    <td>Количество самокатов</td>
+                    <td>Очень много</td>
+                    <td>Среднее</td>
+                    <td>Много</td>
+                </tr>
+                <tr>
+                    <td>Подписка</td>
+                    <td>Яндекс Плюс (999 ₽/год)</td>
+                    <td>МТС Премиум (899 ₽/год)</td>
+                    <td>Whoosh (849 ₽/год)</td>
+                </tr>
+                <tr>
+                    <td>Преимущества подписки</td>
+                    <td>Бесплатная разблокировка, скидка 10%</td>
+                    <td>Бесплатная разблокировка</td>
+                    <td>Бесплатная разблокировка, скидка 15%</td>
+                </tr>
+                <tr>
+                    <td>Баллы</td>
+                    <td>есть</td>
+                    <td>есть</td>
+                    <td>есть</td>
+                </tr>
+                <tr>
+                    <td>Рейтинг в App Store</td>
+                    <td class="rating">4.9 ★</td>
+                    <td class="rating">4.7 ★</td>
+                    <td class="rating">4.8 ★</td>
+                </tr>
+                <tr>
+                    <td>Рейтинг в Google Play</td>
+                    <td class="rating">4.9 ★</td>
+                    <td class="rating">4.4 ★</td>
+                    <td class="rating">4.7 ★</td>
+                </tr>
+                <tr>
+                    <td>Дополнительные услуги</td>
+                    <td>Такси, доставка еды</td>
+                    <td>Самокаты и велосипеды</td>
+                    <td>Самокаты и велосипеды</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <p class="note"><strong>Примечание:</strong> Цены и условия могут меняться в зависимости от города и акционных предложений.</p>
+</body>
+</html>
 
+</body>
+</html>
 
 
 
